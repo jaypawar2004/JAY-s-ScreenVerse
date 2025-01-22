@@ -44,10 +44,13 @@ const HomePage = () => {
     <div className='w-[80%] h-full overflow-auto overflow-x-hidden'>
     <Topnav />
 <Header data={wallpaper}/>
-<div className='mb-5 flex justify-between'>
+<div className='mb-5 flex justify-between p-5'>
 
         <h1 className='text-2xl font-semibold text-zinc-400'>Trending</h1>
-        <Dropdown title="Filter" options={["tv", "movie","all"]} />
+        <Dropdown 
+        title="Filter" 
+        options={["tv", "movie","all"]}
+        func={(e)=> setcategory(e.target.value)} />
         </div>
 <HorizontalCards  data={trending} />
     </div>

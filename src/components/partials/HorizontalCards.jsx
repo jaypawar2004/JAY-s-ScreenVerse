@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown';
 
-const HorizontalCards = ({data , func}) => {
+const HorizontalCards = ({data}) => {
   return (
         
-    <div className='w-[100%] flex overflow-y-hidden overflow-x-auto'>
+    <div className='w-[100%] flex overflow-y-hidden overflow-x-auto mb-5 p-5'>
 {data.map((d, i) => (
 
     <div key={i} className='min-w-[20%] mr-5 mb-5 bg-zinc-900'>
