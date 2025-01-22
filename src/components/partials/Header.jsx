@@ -14,7 +14,7 @@ backgroundSize: 'cover',
 }} 
     className='w-full h-[55vh] flex flex-col justify-end items-start p-[5%]'>
     <h1 className='text-white text-5xl font-black'>
-      {data.name || data.original_name || data.original_title}</h1>
+      {data.name || data.title || data.original_name || data.original_title}</h1>
     <p className='text-white mt-3 w-[60%]'>{data.overview.slice(0, 200)}... 
       <Link className='text-blue-400'>more
     </Link>

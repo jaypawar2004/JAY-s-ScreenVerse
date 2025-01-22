@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './components/HomePage'
+import Trending from './components/Trending'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
 <Routes>
   
   <Route path='/' element={<HomePage />} />
+  <Route path='/trending' element={<Trending />} />
   
 </Routes>
 
