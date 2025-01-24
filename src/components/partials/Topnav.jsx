@@ -40,7 +40,7 @@ placeholder='search' />
  className="text-zinc-400 text-xl ri-close-circle-line"></i>
     )}
    
-   <div className="w-[50%] max-h-[50vh] absolute bg-zinc-200 top-[90%] overflow-auto rounded">
+   <div className="z-[100] w-[50%] max-h-[50vh] absolute bg-zinc-200 top-[90%] overflow-auto rounded">
    {searches.map((s, i) => (
         
     <Link
