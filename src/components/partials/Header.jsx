@@ -16,7 +16,7 @@ backgroundSize: 'cover',
     <h1 className='text-white text-5xl font-black'>
       {data.name || data.title || data.original_name || data.original_title}</h1>
     <p className='text-white mt-3 w-[60%]'>{data.overview.slice(0, 200)}... 
-      <Link className='text-blue-400'>more
+      <Link to={`/${data.media_type}/details/${data.id}`} className='text-blue-400'>more
     </Link>
     </p>
     <p className='text-white mt-3 flex gap-3'>
