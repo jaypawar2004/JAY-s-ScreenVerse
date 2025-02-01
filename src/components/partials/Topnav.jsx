@@ -44,6 +44,7 @@ placeholder='search' />
    {searches.map((s, i) => (
         
     <Link
+    to={`/${s.media_type}/details/${s.id}`}
      key={i}
       className='hover:text-black hover:bg-zinc-300 duration-300 font-semibold text-zinc-600 w-[100%] p-5 flex items-center justify-start border-zinc-100 border-b-2'>
     <img

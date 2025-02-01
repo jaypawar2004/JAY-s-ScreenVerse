@@ -53,7 +53,7 @@ sethasMore(false)
           <i
             onClick={() => navigate(-1)}
             className="hover:text-[#6556CD] ri-arrow-left-long-line"
-          ></i>
+          ></i>{""}
           Trending
         </h1>
         <div className="w-[100%] flex items-center">
