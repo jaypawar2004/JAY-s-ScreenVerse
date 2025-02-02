@@ -26,7 +26,9 @@ backgroundSize: 'cover',
     {data.media_type.toUpperCase()}
 
     </p>
-    <Link className='bg-[#6556CD] p-3 rounded mt-5 text-white font-semibold'>Watch Trailer</Link>
+    <Link 
+    to={`/${data.media_type}/details/${data.id}/trailer`}
+    className='bg-[#6556CD] p-3 rounded mt-5 text-white font-semibold'>Watch Trailer</Link>
     </div>
   )
 }

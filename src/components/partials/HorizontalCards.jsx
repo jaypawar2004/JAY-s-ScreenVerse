@@ -1,19 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Dropdown from './Dropdown';
+import noimage from '/noimage.jpg';
 
 const HorizontalCards = ({data}) => {
-  return (
+  return  (
         
     <div className='w-[100%] flex overflow-y-hidden mb-5 p-5'>
-{data.map((d, i) => (
+{data.length > 0 ? data.map((d, i) => (
 
     <Link to={`/${d.media_type}/details/${d.id}`} key={i} 
     className='min-w-[20%] h-[45vh] mr-5 mb-5 bg-zinc-900'>
 
         <img className='w-full h-[55%] object-cover' 
-        src={`https://image.tmdb.org/t/p/original${
-      d.backdrop_path || d.poster_path}`} alt="" />
+        src={d.backdrop_path || d.poster_path ? `https://image.tmdb.org/t/p/original${
+      d.backdrop_path || d.poster_path}`:noimage} alt="" />
 
 <div className='text-white p-2 h-[55%]'>
 
@@ -28,7 +28,7 @@ const HorizontalCards = ({data}) => {
 </div>
     </Link>
        
-       ))}
+       )): <h1 className='text-white font-black'>Nothing to show</h1>}
 
     </div>
   );

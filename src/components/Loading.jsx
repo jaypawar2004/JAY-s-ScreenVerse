@@ -1,9 +1,10 @@
 import React from 'react'
-import loader from '/loader.svg'
+import loading from '/loading.gif'
 const Loading = () => {
   return (
-    <div className='w-screen h-screen flex justify-center items-center'>
-        <img className='w-[50vh]' src={loader} alt="" />
+    <div className='w-screen h-screen flex justify-center items-center bg-black'>
+        <img className='' src={loading} alt="" />
+       
     </div>
   )
 }

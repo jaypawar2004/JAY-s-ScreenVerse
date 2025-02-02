@@ -164,7 +164,8 @@ const MovieDetails = () => {
         Recommendation & Similar
       </h1>
       <HorizontalCards
-        data={info.recommendation ? info.recommendation : info.similar}
+        data={info.recommendations.langth > 0
+           ? info.recommendations : info.similar}
       />
       <Outlet />
     </div>

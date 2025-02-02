@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import noimage from '/noimage.jpg'
+
 
 const Cards = ({data, title}) => {
   console.log(data)
@@ -11,9 +13,11 @@ to={`/${c.media_type || title}/details/${c.id}`}
 key={i}
  className='relative w-[30vh] shadow-[8px_17px_38px_2px_rgba(0,0,0,.5)] mb-5 mr-5'>
   
-    <img className='' src={`https://image.tmdb.org/t/p/original/${
+    <img className='shadow-[8px_17px_38px_2px_rgba(0,0,0,.5)] h-[60vh] object-cover' src={
+     c.poster_path || c.backdrop_path || c.profile_path ? `https://image.tmdb.org/t/p/original/${
       c.poster_path || c.backdrop_path || c.profile_path}
-    `} alt="" />
+
+    `:noimage} alt="" />
     
     <h1 className='text-zinc-200 font-semibold text-lg mt-3'>
 

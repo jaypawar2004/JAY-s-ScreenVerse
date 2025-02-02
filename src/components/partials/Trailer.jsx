@@ -2,6 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import NotFound from "../NotFound";
 
 const Trailer = () => {
    const navigate = useNavigate()
@@ -15,13 +16,18 @@ const Trailer = () => {
           onClick={() => navigate(-1)}
           className="absolute hover:text-[#6556CD] ri-close-fill text-white text-3xl left-[5%] top-[5%]"
         ></Link>
-      <ReactPlayer
+{ytvideo ? (<ReactPlayer
+controls
         height={600}
         width={800}
         url={`https://www.youtube.com/watch?v=${ytvideo.key}`}
-      />
+      />): (<NotFound />
+
+      )}
+     
     </div>
-  );
+  
+)
 };
 
 export default Trailer;
