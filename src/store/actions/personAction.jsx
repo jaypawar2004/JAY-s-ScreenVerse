@@ -11,11 +11,11 @@ export const asyncloadperson = (id) => async (dispatch, getState) => {
     const movieCredits = await axios.get(`/person/${id}/movie_credits`);
 
     const thedetail = {
-      detail: detail.data,
+      detail: detail.data, 
       externalid: externalid.data,
-      combinedCredits: combinedCredits.data.cast || [],
-      tvCredits: tvCredits.data.cast || [],
-      movieCredits: movieCredits.data.cast || [],
+      combinedCredits: combinedCredits.data,
+      tvCredits: tvCredits.data.cast,
+      movieCredits: movieCredits.data,
     };
     dispatch(loadperson(thedetail));
 
