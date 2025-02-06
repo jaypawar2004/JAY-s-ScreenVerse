@@ -11,6 +11,7 @@ import PersonDetails from './components/PersonDetails'
 import TvDetails from './components/TvDetails'
 import Trailer from './components/partials/Trailer'
 import NotFound from './components/NotFound'
+import About from './components/About'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
   <Route path='/' element={<HomePage />} />
   <Route path='/trending' element={<Trending />} />
   <Route path='/popular' element={<Popular />} />
+  <Route path='/about' element={<About />} />
   
   <Route path='/movie' element={<Movie />} /> 
   <Route path='/movie/details/:id' element={<MovieDetails />}>
