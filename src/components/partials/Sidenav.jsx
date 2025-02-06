@@ -44,7 +44,7 @@ const Sidenav = () => {
      <Link to='/about' className='hover:bg-[#6556CD] hover:text-white rounded duration-300 p-5'>
      <i className="mr-2 ri-information-2-fill"></i>About
      </Link>
-     <Link className='hover:bg-[#6556CD] hover:text-white rounded duration-300 p-5'>
+     <Link to='/contact' className='hover:bg-[#6556CD] hover:text-white rounded duration-300 p-5'>
      <i className="mr-2 ri-phone-fill"></i>Contact Us
      </Link>
     
