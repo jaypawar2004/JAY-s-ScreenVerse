@@ -1,6 +1,6 @@
 import axios from '../utils/axios';
 // import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Loading from './Loading';
 import Dropdown from './partials/Dropdown';
@@ -12,7 +12,7 @@ const Populer = () => {
   
   const navigate = useNavigate();
   const [category, setcategory] = useState("movie");
-  const [duration, setduration] = useState("day");
+  // const [duration, setduration] = useState("day");
   const [popular, setpopular] = useState([]);
   const [page, setpage] = useState(1)
   const [hasMore, sethasMore] = useState(true)
