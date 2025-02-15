@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Topnav from "./partials/Topnav";
 import Dropdown from "./partials/Dropdown";
 import axios from "../utils/axios";
-import { use } from "react";
 import Cards from "./partials/Cards";
 import Loading from "./Loading";
 import InfiniteScroll from "react-infinite-scroll-component";
