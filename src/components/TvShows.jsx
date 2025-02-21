@@ -55,6 +55,7 @@ const TvShows = () => {
           ></i>{" "}
       tvshow <small className='text-sm ml-1 text-zinc-600'>({category})</small>
         </h1>
+      </div>
         <div className="w-[100%] flex items-center">
           <Topnav />
           <Dropdown
@@ -65,7 +66,6 @@ const TvShows = () => {
           <div className="w-[1%]"></div>
          
         </div>
-      </div>
       <InfiniteScroll
         dataLength={tvshow.length}
         next={GetTvshow}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='p-[5%] text-zinc-300'>
+    <div className='p-[5%] text-zinc-300 bg-[#1F1E24] lg:h-[100vh] h-[200vh]'>
         <h1 className='text-zinc-300 font-black text-6xl '>About Us</h1>
         <h4 className='mt-10'>Welcome to JAY's ScreenVerse , your go-to platform for discovering and exploring movies, TV shows, web series, and more!</h4>
         <h2 className='font-bold text-xl mt-10'>Who We Are</h2>

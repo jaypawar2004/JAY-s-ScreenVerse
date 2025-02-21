@@ -44,7 +44,7 @@ select::-ms-expand {
 .select{
     position: relative;
     display: flex;
-    width: 17%;
+    width: 50%;
     height: 3em;
     line-height: 3;
     background: #27272a;
@@ -57,7 +57,7 @@ select::-ms-expand {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0 1em;
+    padding: 2px 4px;
     background: #27272a;
     cursor: pointer;
     pointer-events: none;

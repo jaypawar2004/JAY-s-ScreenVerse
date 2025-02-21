@@ -57,6 +57,7 @@ sethasMore(false)
           ></i>
           Populer
         </h1>
+      </div>
         <div className="w-[100%] flex items-center">
           <Topnav />
           <Dropdown
@@ -67,7 +68,6 @@ sethasMore(false)
           <div className="w-[1%]"></div>
          
         </div>
-      </div>
       <InfiniteScroll
         dataLength={popular.length}
         next={GetPopular}

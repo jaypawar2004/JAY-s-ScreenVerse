@@ -55,17 +55,21 @@ const Movie = () => {
           ></i>{" "}
       Movie <small className='text-sm ml-1 text-zinc-600'>({category})</small>
         </h1>
-        <div className="w-[100%] flex items-center">
+      </div>
+        <div className="lg:w-[100%] w-[100%] flex items-center">
           <Topnav />
-          <Dropdown
+        
+        
+        <Dropdown
             title="Category"
             options={["popular", "top_rated", "upcoming" , "now_playing"]}
             func={(e) => setcategory(e.target.value)}
           />
+          
+          
           <div className="w-[1%]"></div>
          
         </div>
-      </div>
       <InfiniteScroll
         dataLength={movie.length}
         next={GetMovie}

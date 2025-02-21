@@ -54,13 +54,13 @@ const People = () => {
           ></i>{" "}
       People <small className='text-sm ml-1 text-zinc-600'>({category})</small>
         </h1>
+      </div>
         <div className="w-[100%] flex items-center">
           <Topnav />
           
           <div className="w-[1%]"></div>
          
         </div>
-      </div>
       <InfiniteScroll
         dataLength={person.length}
         next={GetPerson}

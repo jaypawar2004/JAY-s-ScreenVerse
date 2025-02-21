@@ -55,6 +55,7 @@ sethasMore(false)
           ></i>{""}
           Trending
         </h1>
+      </div>
         <div className="w-[100%] flex items-center">
           <Topnav />
           <Dropdown
@@ -69,7 +70,6 @@ sethasMore(false)
             func={(e) => setduration(e.target.value)}
           />
         </div>
-      </div>
       <InfiniteScroll
         dataLength={trending.length}
         next={GetTrending}
